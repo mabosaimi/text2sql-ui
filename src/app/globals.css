@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.2101 0.0318 264.6645);
@@ -177,5 +176,16 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }

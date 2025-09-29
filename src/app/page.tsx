@@ -1,19 +1,18 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+import { SchemaPills } from "@/components/schema/SchemaPills";
+import { ChatPanel } from "@/components/chat/ChatPanel";
+import { SAMPLE_SCHEMAS } from "@/lib/schema";
 
 export default function Home() {
   return (
-    <div className='font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20'>
-      <main className='flex flex-col gap-[32px] row-start-2 items-center sm:items-start'>
-        <div className='grid w-full gap-2'>
-          <Textarea
-            placeholder='What was the revenue in Q2?'
-            className='resize-none'
-          />
-          <Button>Generate SQL</Button>
-        </div>
-      </main>
+    <div className="font-sans min-h-screen p-6 pb-20 sm:p-10">
+      <div className="mx-auto w-full max-w-6xl space-y-6">
+        <section className="rounded-lg border bg-card shadow-sm">
+          <div className="p-4 sm:p-6">
+            <SchemaPills schemas={SAMPLE_SCHEMAS} />
+          </div>
+        </section>
+        <ChatPanel />
+      </div>
     </div>
   );
 }
