@@ -10,8 +10,7 @@ export type TableSchema = {
   columns: ColumnSchema[];
 };
 
-// Sample schemas used to inspire queries in the UI.
-// TODO: fetch the schemas from the API.
+// fallback schemas in case the API is not available.
 export const SAMPLE_SCHEMAS: TableSchema[] = [
   {
     table: "customers",
