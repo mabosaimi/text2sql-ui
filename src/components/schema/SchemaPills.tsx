@@ -1,7 +1,6 @@
 "use client";
 
-import { useMemo, useState, useCallback } from "react";
-import type { TableSchema } from "@/lib/schema";
+import { useCallback, useMemo, useState } from "react";
 import {
   Popover,
   PopoverContent,
@@ -12,6 +11,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import type { TableSchema } from "@/lib/schema";
 
 type Props = {
   schemas: TableSchema[];

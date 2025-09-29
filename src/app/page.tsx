@@ -1,7 +1,7 @@
-import { SchemaPills } from "@/components/schema/SchemaPills";
 import { ChatPanel } from "@/components/chat/ChatPanel";
-import { SAMPLE_SCHEMAS } from "@/lib/schema";
+import { SchemaPills } from "@/components/schema/SchemaPills";
 import { fetchSchemas } from "@/lib/api";
+import { SAMPLE_SCHEMAS } from "@/lib/schema";
 
 export default async function Home() {
   let schemas = SAMPLE_SCHEMAS;

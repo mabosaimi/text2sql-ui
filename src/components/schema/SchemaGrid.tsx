@@ -1,8 +1,8 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import type { TableSchema } from "@/lib/schema";
 import { SchemaCard } from "./SchemaCard";
-import { useMemo, useState } from "react";
 
 type Props = {
   schemas: TableSchema[];
